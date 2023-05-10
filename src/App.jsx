@@ -24,12 +24,12 @@ function App() {
       </div>
       <h1>Moral Dilemma</h1>
       <div className='card'>
-        {decisions[count].text}
+        {decisions[count] ? decisions[count].text : 'Congratulations you... won?'}
       </div>
       <div className="card">
         <Stack direction={'row'} spacing={1} justifyContent={'center'}>
-        <Button onClick={() => handleChoose('1')}>{decisions[count]['options']['1']}</Button>
-        <Button onClick={() => handleChoose('2')}>{decisions[count]['options']['2']}</Button>
+        {decisions[count] && <Button onClick={() => handleChoose('1')}>{decisions[count]['options']['1']}</Button>}
+        {decisions[count] && <Button onClick={() => handleChoose('2')}>{decisions[count]['options']['2']}</Button>}
         </Stack>
         <p>
           Choose your option
