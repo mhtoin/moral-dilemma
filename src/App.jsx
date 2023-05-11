@@ -36,17 +36,17 @@ function App() {
       <h1>Moral Dilemma</h1>
       <div className='card'>
         {decisions[count]
-          ? <p>{decisions[count].text}</p>
+          ? <p style={{ fontSize: 40 }}>{decisions[count].text}</p>
           : 'Kiitos pelaamisesta!'}
       </div>
       <div className="card">
         <Stack direction={'column'} spacing={2} justifyContent={'center'} alignItems={'center'} divider={<Divider orientation="horizontal" >Tai</Divider>}>
-          {decisions[count]?.options && decisions[count]?.options["1"] && <Button onClick={() => handleChoose('1')}>{decisions[count]['options']['1']}</Button>}  
-          {decisions[count]?.options && decisions[count]?.options["2"] && <Button onClick={() => handleChoose('2')}>{decisions[count]['options']['2']}</Button>}
-          {decisions[count] && !decisions[count].options && !failed && <Button onClick={handleContinue}>Jatka</Button>}
+          {decisions[count]?.options && decisions[count]?.options["1"] && <Button size='lg' onClick={() => handleChoose('1')}>{decisions[count]['options']['1']}</Button>}  
+          {decisions[count]?.options && decisions[count]?.options["2"] && <Button size='lg' onClick={() => handleChoose('2')}>{decisions[count]['options']['2']}</Button>}
+          {decisions[count] && !decisions[count].options && !failed && <Button size='lg' onClick={handleContinue}>Jatka</Button>}
         </Stack>
         
-        <Button sx={{m: 5}} onClick={() => {
+        <Button size='lg' sx={{m: 5}} onClick={() => {
           setCount('1')
           setFailed(false)
         

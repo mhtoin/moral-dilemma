@@ -59,7 +59,7 @@ export default {
         "text": "Potilas kiukuttelee mutta ottaa lääkkeet valvotusti."
     },
     "1-2-2": {
-        "text": "Potilas saa kollegasi päästämän hänet tupakalle.\n Hups! Potilas on karannut."
+        "text": "Potilas saa kollegasi päästämän hänet tupakalle.\n Potilas karkaa. Hups!"
     },
     "1-1-1-1": {
         "text": "Kollegasi ilmoittaa puhelimensa kadonneen. Potilaalla on historiaa toisten potilaiden tavaroiden ottamisesta. Hän vaikuttaa vahingoniloiselta, mutta kieltää ottaneensa puhelimen.",
