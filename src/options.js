@@ -69,7 +69,7 @@ export default {
         }
     },
     "1-1-1-1-1": {
-        "text": "Et löydä mitään. Potilas masentuu koska häntä ei uskottu."
+        "text": "Et löydä mitään. Potilas masentuu, koska häntä ei uskottu."
     },
     "1-1-1-1-2": {
         "text": "Hoitaja muistaa jättäneensä puhelimen autoonsa."

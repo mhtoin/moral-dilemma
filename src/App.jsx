@@ -21,7 +21,7 @@ function App() {
     setCount(treeParent.toString())
   }
 
-  if ((count === '1-1-2-1' || count === '1-2-1-1-1' || count === '1-2-2') && !failed) {
+  if ((count === '1-1-2-1' || count === '1-2-1-1-1' || count === '1-2-2' || count === '1-1-1-1-1') && !failed) {
     setFailed(true)
   }
 
