@@ -1,23 +1,35 @@
 export default {
     "1": {
-        "text": "You must choose or die!",
+        "text": 'Potilaalla puhelimen käyttö sallittu rajoitetusti.\nHaluaa soittaa tutulle.\nUsein puhelun aikana syntyy riita\nPotilas käyttäytyy puhelun jälkeen usein aggressiivisesti hoitohenkilökuntaa kohtaan\n',
         "options": {
-            "1": "Some decision",
-            "2": "Some other decision"
+            "1": "Salli puhelu",
+            "2": "Älä salli"
         }
     },
     "1-1": {
-        "text": "You chose 1! Now choose another",
+        "text": "Potilas aggressiivinen ja huitoo hoitohenkilökuntaa päin\nKollega kutsuu paikalle vartijat\nVartijoiden mielestä potilas on sidottava sänkyyn oman ja muiden turvallisuuden vuoksi\nPotilas pyytää, ettei häntä sidota\n",
         "options": {
-            "1": "Some other decision",
-            "2": "Some other-other decision"
+            "1": "Huone-eristys",
+            "2": "Sidotaan potilas"
         }
     },
     "1-2": {
-        "text": "You chose 2! Now choose another",
+        "text": "Potilas huutaa henkilökunnalle solvauksia. \nPyytää päästä ulos tupakalle.\nPotilas on aiemmin yrittänyt karata\n",
         "options": {
-            "1": "Some other second decision",
-            "2": "Some other-other second decision"
+            "1": "Päästä tupakalle",
+            "2": "Tarjoa nikotiinilaastaria"
         }
+    },
+    "1-1-1": {
+        "text": "Potilas riehuu n.15 minuuttia ja murtaa kätensä. \n Pyytää aamulla anteeksi käytöstään."
+    },
+    "1-1-2": {
+        "text": "Potilas saa paniikkikohtauksen.\n Hän on aamulla hiljainen ja masentuneen oloinen."
+    },
+    "1-2-1": {
+        "text": "Potilas palaa tunnin kuluttua pikaruokapussin kanssa. \n Aamulla hän valittelee vatsakivuista."
+    },
+    "1-2-2": {
+        "text": "Potilas saa kollegasi päästämän hänet tupakalle.\n Hups! Potilas on karannut."
     }
 }
