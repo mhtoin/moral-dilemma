@@ -8,8 +8,8 @@ import options from './options'
 function App() {
   const [count, setCount] = useState("1")
   const [decisions, setDecisions] = useState(options)
-  const [delay, setDelay] = useState(true)
   const [lang, setLang] = useState('Finnish')
+  const [failed, setFailed] = useState(false)
 
   const handleChoose = (number) => {
     console.log(number, count)
@@ -21,6 +21,9 @@ function App() {
     setCount(treeParent.toString())
   }
 
+  if ((count === '1-1-2-1' || count === '1-2-1-1-1' || count === '1-2-2') && !failed) {
+    setFailed(true)
+  }
 
   return (
     <>
@@ -40,10 +43,15 @@ function App() {
         <Stack direction={'column'} spacing={2} justifyContent={'center'} alignItems={'center'} divider={<Divider orientation="horizontal" >Tai</Divider>}>
           {decisions[count]?.options && decisions[count]?.options["1"] && <Button onClick={() => handleChoose('1')}>{decisions[count]['options']['1']}</Button>}  
           {decisions[count]?.options && decisions[count]?.options["2"] && <Button onClick={() => handleChoose('2')}>{decisions[count]['options']['2']}</Button>}
-          {decisions[count] && !decisions[count].options && <Button onClick={handleContinue}>Jatka</Button>}
+          {decisions[count] && !decisions[count].options && !failed && <Button onClick={handleContinue}>Jatka</Button>}
         </Stack>
         
-        <Button sx={{m: 5}} onClick={() => setCount('1')}>Aloita alusta</Button>
+        <Button sx={{m: 5}} onClick={() => {
+          setCount('1')
+          setFailed(false)
+        
+        }
+          }>Aloita alusta</Button>
       </div>
 
     </>

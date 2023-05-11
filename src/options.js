@@ -56,7 +56,7 @@ export default {
         "text": "Potilas on hamstrannut lääkkeitä ja ottaa ne kaikki kerralla."
     },
     "1-2-1-1-2": {
-        "text": "Potilas kiukuttelee mutta ottaa lääkkeet valvotusti"
+        "text": "Potilas kiukuttelee mutta ottaa lääkkeet valvotusti."
     },
     "1-2-2": {
         "text": "Potilas saa kollegasi päästämän hänet tupakalle.\n Hups! Potilas on karannut."
