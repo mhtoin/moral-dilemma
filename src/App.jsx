@@ -36,7 +36,7 @@ function App() {
       <h1>Moral Dilemma</h1>
       <div className='card'>
         {decisions[count]
-          ? <p style={{ fontSize: 40 }}>{decisions[count].text}</p>
+          ? <p style={{ fontSize: 30 }}>{decisions[count].text}</p>
           : 'Kiitos pelaamisesta!'}
       </div>
       <div className="card">
