@@ -40,7 +40,23 @@ export default {
         "text": "Potilaalla on pelkotiloja. Hän kiittää sinua huolenpidosta."
     },
     "1-2-1": {
-        "text": "Potilas palaa tunnin kuluttua pikaruokapussin kanssa. \n Aamulla hän valittelee vatsakivuista."
+        "text": "Potilas palaa tunnin kuluttua pikaruokapussin kanssa. \n Aamulla hän valittelee vatsakivuista.",
+        "options": {
+            "1": "Jatka"
+        }
+    },
+    "1-2-1-1": {
+        "text": "Potilas ei suostu ottamaan aamulääkkeitä muiden läsnäollessa ja kertoo olevansa oikeutettu yksityisyyteen. Hän pyytää saada ottaa lääkkeet huoneessaan.",
+        "options": {
+            "1": "Anna potilaalle yksityisyyttä",
+            "2": "Kerrot potilaalla olevan valvottu lääkkeenotto"
+        }
+    },
+    "1-2-1-1-1": {
+        "text": "Potilas on hamstrannut lääkkeitä ja ottaa ne kaikki kerralla."
+    },
+    "1-2-1-1-2": {
+        "text": "Potilas kiukuttelee mutta ottaa lääkkeet valvotusti."
     },
     "1-2-2": {
         "text": "Potilas saa kollegasi päästämän hänet tupakalle.\n Hups! Potilas on karannut."
