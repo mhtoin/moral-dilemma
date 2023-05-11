@@ -34,7 +34,7 @@ function App() {
       <div className='card'>
         {decisions[count]
           ? <p>{decisions[count].text}</p>
-          : ''}
+          : 'Kiitos pelaamisesta!'}
       </div>
       <div className="card">
         <Stack direction={'column'} spacing={2} justifyContent={'center'} alignItems={'center'} divider={<Divider orientation="horizontal" >Tai</Divider>}>
