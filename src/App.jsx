@@ -34,7 +34,7 @@ function App() {
       <div className='card'>
         {decisions[count]
           ? <p>{decisions[count].text}</p>
-          : 'Congratulations you... won?'}
+          : ''}
       </div>
       <div className="card">
         <Stack direction={'column'} spacing={2} justifyContent={'center'} alignItems={'center'} divider={<Divider orientation="horizontal" >Tai</Divider>}>
@@ -43,7 +43,7 @@ function App() {
           {decisions[count] && !decisions[count].options && <Button onClick={handleContinue}>Jatka</Button>}
         </Stack>
         
-        <Button sx={{m: 5}} onClick={() => setCount('1')}>Reset</Button>
+        <Button sx={{m: 5}} onClick={() => setCount('1')}>Aloita alusta</Button>
       </div>
 
     </>
